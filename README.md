@@ -118,3 +118,33 @@
 
 
 ```
+
+
+## Mutations
+Now, you know how to get state from Vuex.
+
+U can direct asscess state by using `this.$store.state.count`
+
+Or using **Getters**
+
+BUT...
+
+How to **update** or **setting** or **change** the state?!
+
+in Vuex, we don't use Setters
+
+we use **Mutations**
+
+And two things you should remember!
+
+> Never ever directly to change vuex state! Alway use mutations
+
+**Meaning: The only way to actually change state in a Vuex store is by committing a mutation.**
+
+
+> Mutations Must Be Synchronous, that mutation handler functions must be synchronous. 
+
+**Meaning: The mutation function can't live any async function!**
+
+
+mutations notes refer to source code...
